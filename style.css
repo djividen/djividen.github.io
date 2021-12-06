@@ -57,15 +57,53 @@ html {
 }
 .nav ul li a {
     text-decoration: none;
-    color: #393939;
+    color: #000;
+    font-weight: bold;
     display:inline-block;
     width:300px;
 }
 .nav ul li a:hover {
     color:#e8e8e8;
+    transition: .2s ease-in-out;
 }
 .foot {
     margin:20px 0 0;
     position:sticky;
     top:100%;
 }
+.panes {
+    margin:20px 0;
+    width:100%;
+    display: flex;
+    flex-flow:wrap;
+    flex-wrap: wrap;
+    flex: 1 auto;
+    justify-content: space-evenly;
+}
+.pane {
+    width: calc(50% - 6px);
+    height: 50%;
+    min-width:300px;
+    min-height:300px;
+    background:var(--color2);
+    margin:3px;
+    text-align:center;
+    line-height:300px;
+    font-size:25px;
+}
+.pane a {
+    text-decoration: none;
+    color:#FFF;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px var(--color0);
+    width:100%;
+    height:100%;
+    display:block;
+    box-shadow: 0 0 4px var(--color0);
+    transition: .2s ease-in-out;
+}
+.pane a:hover {
+    box-shadow: 0 0 7px #000;
+}
+
